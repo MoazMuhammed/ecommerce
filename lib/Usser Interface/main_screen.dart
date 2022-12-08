@@ -14,8 +14,15 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(),
+    return SafeArea(
+      child: Scaffold(
+
+        body: Column(
+          children: [
+            AppBarCustom(iconLeft: Icons.ac_unit, iconRight: Icons.ac_unit,),
+          ],
+        ),
+      ),
     );
   }
 }

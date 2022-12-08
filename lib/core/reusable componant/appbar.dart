@@ -16,7 +16,7 @@ class _AppBarCustomState extends State<AppBarCustom> {
     return Row(
       children: [
         Icon(widget.iconLeft),
-        Text("A7a"),
+        Text("App"),
         Icon(widget.iconRight)
       ],
     );
