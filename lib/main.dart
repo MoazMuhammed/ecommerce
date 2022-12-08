@@ -2,6 +2,7 @@ import 'package:ecommerce/Usser%20Interface/main_screen.dart';
 import 'package:ecommerce/core/Themes/theme_constant.dart';
 import 'package:ecommerce/core/Themes/theme_manager.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,12 +39,14 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme:lightTheme ,
-      darkTheme: darkTheme,
-      themeMode: themeManager.themeMode,
-      home:  MainScreen(),
-    );
+    return ResponsiveSizer(
+      builder: (p0, p1, p2 ) {
+        return MaterialApp(
+        title: 'Flutter Demo',
+        theme:lightTheme ,
+        darkTheme: darkTheme,
+        themeMode: themeManager.themeMode,
+        home:  MainScreen());
+      });
   }
 }

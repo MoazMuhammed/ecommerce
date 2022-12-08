@@ -91,7 +91,7 @@ flutter:
   # example:
   fonts:
     - family: Cairo
-      fonts:
+    - fonts:
         - asset: fonts/cairo/Cairo-Black.ttf
           weight: 900
         - asset: fonts/cairo/Cairo-ExtraBold.ttf

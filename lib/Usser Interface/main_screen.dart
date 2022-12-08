@@ -19,7 +19,7 @@ class _MainScreenState extends State<MainScreen> {
 
         body: Column(
           children: [
-            AppBarCustom(iconLeft: Icons.ac_unit, iconRight: Icons.ac_unit,),
+            const Center(child: AppBarCustom()),
           ],
         ),
       ),
