@@ -1,3 +1,4 @@
+import 'package:ecommerce/Usser%20Interface/login_screen.dart';
 import 'package:ecommerce/Usser%20Interface/main_screen.dart';
 import 'package:ecommerce/core/Themes/theme_constant.dart';
 import 'package:ecommerce/core/Themes/theme_manager.dart';
@@ -46,7 +47,7 @@ class _MyAppState extends State<MyApp> {
         theme:lightTheme ,
         darkTheme: darkTheme,
         themeMode: themeManager.themeMode,
-        home:  MainScreen());
+        home:  LoginScreen());
       });
   }
 }
